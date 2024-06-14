@@ -10,7 +10,7 @@ export default function App() {
   const [qtdDigitado, setQtdDigitado] = useState("");
   const [dados, setDados] = useState([]);
 
-//Função para consultar os veículos
+//Função para consultar as compras
   const consultarCompras = async () =>{
    
       const {data, error} = await supabase.from ("tb_lista_compras")
